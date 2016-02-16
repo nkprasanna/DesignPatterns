@@ -10,12 +10,12 @@ namespace FactoryDP1
     {
         public void TurnOn()
         {
-            Console.WriteLine("MIncooper Running");
+            Console.WriteLine("Mincooper is Running");
         }
 
         public void TurnOff()
         {
-            Console.WriteLine("Turned off Mini Cooper");
+            Console.WriteLine("Turn off Mini Cooper");
 
         }
     }

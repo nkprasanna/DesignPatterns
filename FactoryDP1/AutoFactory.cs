@@ -18,12 +18,12 @@ namespace FactoryDP1
      
         public IAuto CreateInstance(string carName)
         {
-            Type T = GetTypeToCreate(carName);
-            if(T ==null )
+            Type t = GetTypeToCreate(carName);
+            if(t == null )
             {
                 return new NullCar();
             }
-            return Activator.CreateInstance(T) as IAuto;
+            return Activator.CreateInstance(t) as IAuto;
         }
 
         Type GetTypeToCreate(string carName)
@@ -37,13 +37,13 @@ namespace FactoryDP1
             }
             return null;
         }
-         void LoadTypeICanReturn()
+        
+        void LoadTypeICanReturn()
         {
             autos =new  Dictionary<string, Type>();
             Type[] typesInThisAssembley = Assembly.GetExecutingAssembly().GetTypes();
             foreach (Type type in typesInThisAssembley)
             {
-                
                 if(type.GetInterface(typeof(IAuto).ToString()) != null )
                 {
                     autos.Add(type.Name.ToLower(), type);
