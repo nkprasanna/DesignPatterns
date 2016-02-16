@@ -18,6 +18,7 @@ namespace FactoryDP1
             car.TurnOff();            
         }
 
+        /* Previous example code */
         //static IAuto GetCar(string carName)
         //{
         //    switch (carName)
