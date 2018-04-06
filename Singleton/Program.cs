@@ -15,6 +15,8 @@ namespace Singleton
             SingleInstance.Instance.MyNormalMethod();
             SingleInstance.MyMethod();
             LazySingleton.Instance.LazyMethod();
+
+            
         }
     }
 }

@@ -11,6 +11,9 @@ namespace Singleton
         private static SingleInstance _instance;
         private static readonly object _lock = new object();
 
+        /// <summary>
+        /// 
+        /// </summary>
         private SingleInstance()
         {
 
@@ -36,7 +39,7 @@ namespace Singleton
         }
         public static void MyMethod()
         {
-            Console.WriteLine("Static Method\n");
+            Console.WriteLine("Static Method Call\n");
         }
         public void MyNormalMethod()
         {
